@@ -15,7 +15,7 @@ export SUB_NAME=${SUB_NAME:-''}
 export MYIP_URL=${MYIP_URL:-''}
 export MY_DOMAIN=${MY_DOMAIN:-''}
 
-export UUID=${UUID:-'7160b696-dd5e-42e3-a024-145e92cec916'}
+export UUID=${UUID:-''}
 export NEZHA_VERSION=${NEZHA_VERSION:-'V1'}
 export NEZHA_SERVER=${NEZHA_SERVER:-''}
 export NEZHA_KEY=${NEZHA_KEY:-''}
@@ -82,7 +82,7 @@ initialize_downloads() {
   fi
 
   if [ -n "${ECH_PROTOCOL}" ] && [ -n "${ECH_PORT}" ]; then
-    download_program "${FILE_PATH}/ech" "https://github.com/kahunama/myfile/releases/download/main/ech-tunnel-linux-arm64" "https://github.com/kahunama/myfile/releases/download/main/ech-tunnel-linux-amd64"
+    download_program "${FILE_PATH}/ech" "https://github.com/mqzgithub1203/dock/releases/download/4.0/x-tunnel-linux-arm64" "https://github.com/mqzgithub1203/dock/releases/download/3.0/x-tunnel-linux-amd64"
     sleep 3
     chmod +x ${FILE_PATH}/ech
   fi
